@@ -7,7 +7,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-wb = openpyxl.load_workbook("Aptitude_list.xlsx")
+wb = openpyxl.load_workbook(r"E:\Firefox Downloads\test_ranks_2023-03-04T13_11_24.312136+05_30(1).xlsx")
+
 sh = wb.active
 
 email_sender = "ai_ds.aicolegion@ves.ac.in"
@@ -19,7 +20,7 @@ subj = "Results of Coding Ninja: CoLegion Coding Test"
 em["Subject"] = subj
 context = ssl.create_default_context()
 # email_receiver = '2020.naresh.shewkani@ves.ac.in'
-for i in range(1,100):    #first index is inclusive, last index is exclusive
+for i in range(3,59):    #first index is inclusive, last index is exclusive
         def html_text():
             em.add_alternative(
                 f"""\
